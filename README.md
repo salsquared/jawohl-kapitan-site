@@ -39,25 +39,19 @@ It fails on: any `<script>`, `<object>`, `<embed>`, `<base>`, inline `style=` or
 
 ## Hosting: GitHub Pages and Cloudflare
 
-1. Create the public repository `salsquared/jawohl-kapitan-site` and push this tree to it.
-2. Repository Settings, Pages: Source **GitHub Actions** (not "deploy from a branch"). The workflow runs the check and publishes only when it passes; a failing push leaves the live site as it was. Set the custom domain to `jawohlkapitan.com` there too (`CNAME` holds the same name). A new top-level page or folder must be added to the workflow's "Stage the public files" line, or it is not published.
-3. Cloudflare DNS for `jawohlkapitan.com`: apex `A` records `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` and `AAAA` records `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153` (check against GitHub's current docs before adding), plus `www` as a `CNAME` to `salsquared.github.io`. **Set all of them to DNS only (grey cloud) first.**
-4. Wait until GitHub Pages shows the certificate as issued, then tick "Enforce HTTPS". **Only after that turn the Cloudflare proxy on (orange cloud).** Set SSL/TLS mode to **Full**.
-5. Redirect `www.jawohlkapitan.com` to the apex: a Cloudflare Redirect Rule (hostname equals `www.jawohlkapitan.com`, dynamic redirect to `concat("https://jawohlkapitan.com", http.request.uri.path)`, status 301).
-6. Turn these off, because each one injects a script or rewrites the page, and the page must stay script-free:
-   - Web Analytics automatic setup (script injection),
-   - Email Address Obfuscation (Scrape Shield),
-   - Rocket Loader,
-   - bot JavaScript detections (Security, Bots).
+As set up on 2026-11-21:
 
-   Visitor counts then come only from Cloudflare's server-side zone analytics.
-7. Add a Cloudflare Response Header Transform Rule (modify response header) for the zone, setting:
+1. GitHub: this repository, Pages source **GitHub Actions**, custom domain `jawohlkapitan.com`, "Enforce HTTPS" on. The workflow runs the check and publishes only when it passes; a failing push leaves the live site as it was.
+2. Cloudflare DNS: two records, both proxied (orange cloud): `CNAME jawohlkapitan.com → salsquared.github.io` (Cloudflare flattens a CNAME at the apex, so no A/AAAA records are needed) and `CNAME www → salsquared.github.io`. GitHub redirects `www` and plain `http` to `https://jawohlkapitan.com` itself, so no redirect rule is needed. The mail records (MX, SPF, DKIM) are separate and untouched.
+3. Order that worked: add the records as **DNS only** first; GitHub issues its certificate only while it can see its own addresses. If the certificate stays empty for minutes, remove the custom domain in the Pages settings and add it again. Once HTTPS works, enforce it, then switch the proxy on. SSL/TLS mode: **Full**. Leave "Always Use HTTPS" off: GitHub already redirects, and its certificate renewal (due before February 2027) needs plain-HTTP requests to reach it. If a renewal fails, switch the records to DNS only until it is issued.
+4. Off, because each one injects a script or rewrites the page: Email Address Obfuscation, Rocket Loader, Web Analytics automatic setup, Bot Fight Mode JavaScript detections. Visitor counts come only from Cloudflare's server-side zone analytics.
+5. A Response Header Transform Rule (hostname `jawohlkapitan.com`) sets:
    - `Content-Security-Policy: default-src 'self'; script-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; frame-src https://www.youtube-nocookie.com; img-src 'self' data:; media-src 'self'; style-src 'self'`
    - `Referrer-Policy: strict-origin-when-cross-origin`
+   - `X-Content-Type-Options: nosniff`
 
    GitHub Pages cannot set headers itself. The CSP has no `'unsafe-inline'`, which is why no page has a `style=` attribute, `<style>` block or script.
-8. Mail (`press@`, `support@`) is Cloudflare Email Routing and is set up separately.
-9. After the proxy is on, open the live page, view its source and confirm there is no `/cdn-cgi/` script anywhere, and that `press@jawohlkapitan.com` and `support@jawohlkapitan.com` appear as written (not rewritten to `[email protected]`).
+6. After any Cloudflare change, view the live page source: no `<script>`, no `/cdn-cgi/`, and `press@jawohlkapitan.com` and `support@jawohlkapitan.com` written out as they are.
 
 The iframe uses `loading="lazy"`, so on a phone it connects to Google only when it scrolls near it. Click-to-load would need a few lines of inline script and therefore a CSP change; do not add it without deciding that first.
 
