@@ -1,0 +1,17 @@
+Translation draft, pending native check.
+
+SHORT
+Jawohl Kapitän ist ein U-Boot-Spiel im Zweiten Weltkrieg, in dem du der Kapitän bist. Als Kapitän eines U-Boots vom Typ VII gibst du einen Befehl, die Besatzung antwortet und führt ihn aus, und mit den Zifferntasten wechselst du zwischen den Plätzen im Boot. Jage einen gesicherten Geleitzug und überlebe seine Eskorte.
+
+LONG
+Jawohl Kapitän setzt dich im Zweiten Weltkrieg auf den Platz des Kapitäns eines U-Boots vom Typ VII. Du steuerst, zielst und feuerst nicht selbst. Du gibst Befehle, und deine Besatzung antwortet und führt sie aus. Das ist das ganze Spiel: was du befiehlst, wem und wann.
+
+Mit den Zifferntasten springst du sofort zwischen den Plätzen im Boot. Du stehst in der Zentrale, dann am Periskop, dann im Hydrophonraum, so wie ein Kapitän durch ein Boot geht, das nie still ist. Jeder Platz hat seinen eigenen Offizier, der dir sagt, was er sieht und was er tun kann.
+
+In den ersten Einsätzen jagst du einen Geleitzug und seine Sicherung. Du beginnst aufgetaucht mit einer älteren Kontaktmeldung, planst mit deinem Navigator einen Abfangkurs, findest einen Frachter und greifst ihn an. Dann musst du die Eskorte überleben, die dich jagt.
+
+Das Spiel entsteht bei salsquared, einem unabhängigen Entwickler, auf Englisch und Deutsch. Es erscheint zuerst auf Steam im Early Access, nach einer kostenlosen ersten Demo ab dem 1. Dezember 2026. Das große geplante Feature ist der Mehrspielermodus: gemeinsam mit Freunden ein Boot zu führen. Er ist für später geplant, aber nicht versprochen.
+
+TODO-COPY: "Du steuerst, zielst und feuerst nicht selbst." (LONG, Absatz 1) is not settled.
+TODO-COPY: "In den ersten Einsätzen" (LONG, Absatz 3) is not settled.
+TODO-COPY: "kostenlosen ersten Demo" (LONG, Absatz 4) is not settled.
