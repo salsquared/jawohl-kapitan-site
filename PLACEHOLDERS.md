@@ -19,7 +19,7 @@ Not placeholders but still to settle:
 
 - **Logo (final).** The orange ship's wheel, cut out with a transparent background from the 2000x2000 logo image (no letters; the title "Jawohl Kapitän" is real text beside it). `assets/img/logo-1x.webp` / `logo-2x.webp` (256 / 512 px), `favicon.png` (64 px, transparent), `apple-touch-icon.png` (180 px, on the site's dark background) and `press/kit-src/logo.png` (1024 px, transparent) are all made from it. **Still missing: an SVG logo for the press kit** (the kit has the PNG only).
 - Colours in the `:root` block of `assets/site.css` are placeholders.
-- `https://TODO-GOFUNDME`, `https://TODO-GOFUNDME-UPDATE`, `https://TODO-ITCH`, `TODO-VIDEO-ID` (both pages), `TODO-VIDEO-URL` (press kit README), and all `TODO-LEGAL` boxes (see README, "Other TODOs").
+- `https://TODO-GOFUNDME`, `https://TODO-GOFUNDME-UPDATE`, `TODO-VIDEO-ID` (both pages), `TODO-VIDEO-URL` (press kit README), and all `TODO-LEGAL` boxes (see README, "Other TODOs").
 - The YouTube channel URL `youtube.com/@jawohlkapitan` is unconfirmed; the TikTok and Reddit URLs are built from the handle.
 
 The zip `press/jawohl-kapitan-press-kit.zip` is built from `press/kit-src/`, which holds placeholders, so it is a placeholder too.

@@ -61,7 +61,7 @@ Stage 1 (from 1 Dec 2026) is what is in the files. Both languages, both pages (`
 
 | Stage | Section 1 main button | Second button | Section 6 | Section 7 |
 | --- | --- | --- | --- | --- |
-| 1: GoFundMe | "Support on GoFundMe" / "Auf GoFundMe unterstützen", `https://TODO-GOFUNDME` | "Play the free demo" / "Gratis-Demo spielen", `https://TODO-ITCH` | shown | TikTok, YouTube, Reddit |
+| 1: GoFundMe | "Support on GoFundMe" / "Auf GoFundMe unterstützen", `https://TODO-GOFUNDME` | "Play the free demo" / "Gratis-Demo spielen", `https://salsquared.itch.io/jawohl-kapitan` | shown | TikTok, YouTube, Reddit |
 | 2: Coming Soon page | change label to "Wishlist on Steam" / "Auf die Steam-Wunschliste" and href to the Steam store page. Valve rules: plain text link or Valve's own badge with its trademark line, never a home-made Steam-logo button | href becomes the Steam page once the demo is there | stays, GoFundMe link moves here only | uncomment `STEAM_BLOCK` and set the URL |
 | 3: Early Access | label "Buy on Steam" / "Auf Steam kaufen" | Steam | delete the block between `CAMPAIGN_BLOCK_START` and `CAMPAIGN_BLOCK_END` once the campaign ends, and the GoFundMe update link in section 5 | add Bluesky or X (`BLUESKY_BLOCK`, `X_BLOCK`) when claimed and posting |
 
@@ -72,7 +72,7 @@ Also at each milestone: rewrite the one dated line in section 5 (both languages)
 Everything marked `TODO-` is caught by `--release`. Where they are:
 
 - `TODO-VIDEO-ID` (section 3, both pages): delete the placeholder div, uncomment the iframe, put the real ID in.
-- `TODO-GOFUNDME`, `TODO-GOFUNDME-UPDATE`, `TODO-ITCH` (both pages), and `TODO-STEAM-URL`, `TODO-X-HANDLE` inside the commented blocks in section 7.
+- `TODO-GOFUNDME`, `TODO-GOFUNDME-UPDATE`, and `TODO-STEAM-URL`, `TODO-X-HANDLE` inside the commented blocks in section 7.
 - `TODO-VIDEO-URL` in `press/kit-src/README.txt`: the video link for the press kit.
 - `TODO-LEGAL` boxes: notice text pending on the four notice pages (`/privacy/`, `/legal-notice/`, `/de/datenschutz/`, `/de/rechtliches/`), plus the draft YouTube paragraph on `/privacy/`.
 - `TODO-LEGAL` in `de/index.html`, section 8: the German use line is pending (the English line stays until then).
