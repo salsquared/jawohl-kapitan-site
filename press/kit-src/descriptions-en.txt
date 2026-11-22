@@ -2,14 +2,10 @@ SHORT
 Jawohl Kapitän is a World War II submarine game where you are the captain. As the captain of a Type VII U-boat you give an order, your crew answers and carries it out, and the number keys cut between positions on the boat. Hunt a guarded convoy, and survive its escort.
 
 LONG
-Jawohl Kapitän puts you in the captain's place on a Type VII U-boat in the Second World War. You do not steer, aim or fire yourself. You give orders, and your crew answers and carries them out. That is the whole game: what you order, to whom, and when.
+Jawohl Kapitän puts you in the captain's place on a Type VII U-boat in the Second World War. You command the boat: where it steers, what it aims at and when it fires. Your crew answers and carries out your orders. That is the whole game: what you order, to whom, and when.
 
 The number keys cut instantly between positions on the boat. You stand in the control room, then at the periscope, then in the hydrophone room, the way a captain moves through a boat that is never quiet. Each position has its own officer, who tells you what they see and what they can do.
 
-The first missions have you hunt a convoy and its escort. You start on the surface with an old contact report, plan an intercept with your navigator, find a merchant ship and attack it. Then you have to survive the escort that comes for you.
+In Demo 1 you hunt a convoy and its escort. You start on the surface with an old contact report, plan an intercept with your navigator, find a merchant ship and attack it. Then you have to survive the escort that comes for you.
 
-The game is made by salsquared, one independent developer, in English and German. It comes first to Steam in Early Access, after a free first demo from 1 December 2026. The big feature we plan is multiplayer: commanding a boat together with friends. It is planned for later, but it is not promised.
-
-TODO-COPY: "You do not steer, aim or fire yourself." (LONG, paragraph 1) is not settled.
-TODO-COPY: "first missions" (LONG, paragraph 3) is not settled.
-TODO-COPY: "the free first demo" (LONG, paragraph 4) is not settled.
+The game is made by salsquared, one independent developer, in English and German. It comes first to Steam in Early Access, after the free Demo 1 (0.1.0) from 1 December 2026. The big feature we plan is multiplayer: commanding a boat together with friends. It is planned for later, but it is not promised.

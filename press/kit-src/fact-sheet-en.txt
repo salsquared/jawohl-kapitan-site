@@ -3,9 +3,7 @@ Developer: salsquared (an independent developer)
 Genre: World War II submarine command
 Platform: Windows PC
 Engine: Unreal Engine 5
-Release: Steam Early Access, date not set. A free first demo from 1 December 2026.
-Languages: English and German; the first demo is in English only
+Release: Steam Early Access, date not set. The free Demo 1 (0.1.0) from 1 December 2026.
+Languages: English and German; Demo 1 (0.1.0) is in English only
 Price: Not published until the Steam page sets it
 Contact: press@jawohlkapitan.com
-
-TODO-COPY: "the free first demo" (Release line) is not settled.

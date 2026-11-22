@@ -12,14 +12,12 @@ Real pictures and clips must come from the build approved for public material.
 | `assets/img/shot-1-1x.webp` ... `shot-4-1x.webp` | Screenshots, 800 px wide (control room, boat from outside, a gauge, corvette on the horizon) |
 | `assets/img/shot-1-2x.webp` ... `shot-4-2x.webp` | The same, 1600 px wide. This is also the "full size" link target, so keep it under 200 KB |
 | `assets/img/status-1x.webp`, `status-2x.webp` | Newest picture for "Where it stands" (800 / 1600 px) |
-| `assets/img/og.jpg` | Social card, 1200x630 JPEG (not WebP: crawlers), under 200 KB |
+| `assets/img/og.jpg` | Social card, 1200x630 JPEG (not WebP: crawlers), under 200 KB. It carries the final logo on a placeholder card |
 | `press/kit-src/key-art-PLACEHOLDER.webp`, `screenshot-1..4-PLACEHOLDER.webp` | Full-size key art and stills for the zip (rename without PLACEHOLDER; the zip may use larger files, the 200 KB limit applies to them too) |
-| `press/kit-src/logo-PLACEHOLDER.png` | The logo as transparent PNG and SVG |
 
 Not placeholders but still to settle:
 
-- **Logo.** `assets/img/logo-1x.webp` / `logo-2x.webp` are resized from a 2000x2000 RGB logo image with the dark background baked in. The press kit needs a transparent PNG and SVG. Neither logo file carries the words "Jawohl Kapitän", so the title is real text beside the badge.
-- `favicon.png` and `apple-touch-icon.png` are resized from the same logo.
+- **Logo (final).** The orange ship's wheel, cut out with a transparent background from the 2000x2000 logo image (no letters; the title "Jawohl Kapitän" is real text beside it). `assets/img/logo-1x.webp` / `logo-2x.webp` (256 / 512 px), `favicon.png` (64 px, transparent), `apple-touch-icon.png` (180 px, on the site's dark background) and `press/kit-src/logo.png` (1024 px, transparent) are all made from it. **Still missing: an SVG logo for the press kit** (the kit has the PNG only).
 - Colours in the `:root` block of `assets/site.css` are placeholders.
 - `https://TODO-GOFUNDME`, `https://TODO-GOFUNDME-UPDATE`, `https://TODO-ITCH`, `TODO-VIDEO-ID` (both pages), `TODO-VIDEO-URL` (press kit README), and all `TODO-LEGAL` boxes (see README, "Other TODOs").
 - The YouTube channel URL `youtube.com/@jawohlkapitan` is unconfirmed; the TikTok and Reddit URLs are built from the handle.

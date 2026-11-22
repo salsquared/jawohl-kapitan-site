@@ -76,7 +76,7 @@ Everything marked `TODO-` is caught by `--release`. Where they are:
 - `TODO-VIDEO-URL` in `press/kit-src/README.txt`: the video link for the press kit.
 - `TODO-LEGAL` boxes: notice text pending on the four notice pages (`/privacy/`, `/legal-notice/`, `/de/datenschutz/`, `/de/rechtliches/`), plus the draft YouTube paragraph on `/privacy/`.
 - `TODO-LEGAL` in `de/index.html`, section 8: the German use line is pending (the English line stays until then).
-- `TODO-COPY`: wording that is not settled. In `index.html` and `de/index.html`: the hook (head, hero), the JK badge logo (head, hero), the demo's name "the free first demo" (hero button, section 5, fact sheet, long description), the first line of section 6, "You do not steer, aim or fire yourself." and "first missions" in the long description. The same wording in `press/kit-src/descriptions-en.txt`, `press/kit-src/fact-sheet-en.txt` and `tools/kit-de/` is marked with `TODO-COPY` lines, which are left out of the zip.
+- `TODO-COPY`: none open. Wording that is not settled gets a `TODO-COPY` comment line in a page, or a `TODO-COPY` line in a kit `.txt` file (left out of the zip); `--release` fails on every one.
 
 ## Switching German on
 
@@ -95,7 +95,7 @@ Until then the check does the opposite: it fails if a German kit text is in `pre
 
 ## Press kit rebuild
 
-`press/jawohl-kapitan-press-kit.zip` is built from `press/kit-src/`, which for now holds **placeholder** pictures and a placeholder logo. To rebuild: replace the files in `press/kit-src/` (drop `-PLACEHOLDER` from the names), update the text files if the page text changed, then run `python3 tools/build_press_kit.py` and commit the zip. The zip is deterministic, so an unchanged source gives an identical zip, and the check compares the zip on disk with a fresh build. Lines starting with `TODO-COPY` in the kit `.txt` files are notes and are left out of the zip. The check also compares `descriptions-en.txt`, `fact-sheet-en.txt` and `use-line.txt` with section 8 of `index.html`, so change them together.
+`press/jawohl-kapitan-press-kit.zip` is built from `press/kit-src/`, which for now holds **placeholder** pictures and the real logo as a transparent PNG (`logo.png`, no SVG yet). To rebuild: replace the files in `press/kit-src/` (drop `-PLACEHOLDER` from the names), update the text files if the page text changed, then run `python3 tools/build_press_kit.py` and commit the zip. The zip is deterministic, so an unchanged source gives an identical zip, and the check compares the zip on disk with a fresh build. Lines starting with `TODO-COPY` in the kit `.txt` files are notes and are left out of the zip. The check also compares `descriptions-en.txt`, `fact-sheet-en.txt` and `use-line.txt` with section 8 of `index.html`, so change them together.
 
 ## Legal text
 

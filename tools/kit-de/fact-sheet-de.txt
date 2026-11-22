@@ -5,9 +5,7 @@ Entwickler: salsquared (ein unabhängiger Entwickler)
 Genre: U-Boot-Kommandospiel im Zweiten Weltkrieg
 Plattform: Windows-PC
 Engine: Unreal Engine 5
-Erscheinen: Steam Early Access, Termin offen. Eine kostenlose erste Demo ab dem 1. Dezember 2026.
-Sprachen: Englisch und Deutsch; die erste Demo gibt es nur auf Englisch
+Erscheinen: Steam Early Access, Termin offen. Die kostenlose Demo 1 (0.1.0) ab dem 1. Dezember 2026.
+Sprachen: Englisch und Deutsch; die Demo 1 (0.1.0) gibt es nur auf Englisch
 Preis: Wird erst veröffentlicht, wenn die Steam-Seite ihn festlegt
 Kontakt: press@jawohlkapitan.com
-
-TODO-COPY: "kostenlose erste Demo" (Erscheinen line) is not settled.
